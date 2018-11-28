@@ -83,9 +83,10 @@ module.exports = {
     const ref = this.retrieveModel(model, query.options.source);
 
     // Construct parameters object sent to the Content Manager service.
+    // Note: we're trying to avoid useless populate for performances. Please be careful if you're updating this part.
     const params = {
       ...query.options,
-      populate: ref.associations.filter(a => !a.dominant).map(a => a.alias),
+      populate: ref.associations.filter(a => !a.dominant && _.isEmpty(a.model)).map(a => a.alias),
       query: {}
     };
 
