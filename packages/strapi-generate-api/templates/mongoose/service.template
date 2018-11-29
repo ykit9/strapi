@@ -25,9 +25,9 @@ module.exports = {
     const filters = strapi.utils.models.convertParams('<%= globalID.toLowerCase() %>', params);
     const hook = strapi.hook[<%= globalID %>.orm];
     // Generate stages.
-    const populateStage = hook.load().generateLookupStage(<%= globalID %>, { whitelistedPopulate: populate }); // Nested-Population
+    const populateStage = hook.load().generateLookupStage(<%= globalID %>, { whitelistedPopulate: filters.populate || populate }); // Nested-Population
     const matchStage = hook.load().generateMatchStage(<%= globalID %>, filters); // Nested relation filter
-    const aggregateStages = mergeStages(filters.populate || populateStage, matchStage);
+    const aggregateStages = mergeStages(populateStage, matchStage);
 
     const result = <%= globalID %>.aggregate(aggregateStages)
       .skip(filters.start)
