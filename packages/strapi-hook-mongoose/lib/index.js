@@ -230,6 +230,10 @@ module.exports = function (strapi) {
                   }
                 };
 
+                if (strapi.models[model] && strapi.models[model].bootstrap) {
+                  strapi.models[model].bootstrap(collection.schema);
+                }
+
                 // Instantiate model.
                 const Model = instance.model(definition.globalId, collection.schema, definition.collectionName);
 
