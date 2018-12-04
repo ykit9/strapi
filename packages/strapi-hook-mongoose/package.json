@@ -1,7 +1,7 @@
 {
-  "name": "strapi-hook-mongoose",
+  "name": "strapi-hook-mongoose-boostrap",
   "version": "3.0.0-alpha.15",
-  "description": "Mongoose hook for the Strapi framework",
+  "description": "Mongoose hook for the Strapi framework with ability to bootstrap your mongoose scheme with plugins",
   "homepage": "http://strapi.io",
   "keywords": [
     "mongoose",
@@ -23,23 +23,21 @@
     "strapi-utils": "3.0.0-alpha.15"
   },
   "author": {
-    "email": "hi@strapi.io",
-    "name": "Strapi team",
-    "url": "http://strapi.io"
+    "name": "Y Kit",
+    "email": "Lawn1995@gmail.com"
   },
   "maintainers": [
     {
-      "name": "Strapi team",
-      "email": "hi@strapi.io",
-      "url": "http://strapi.io"
+      "name": "Y Kit",
+      "email": "Lawn1995@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/strapi/strapi.git"
+    "url": "https://github.com/ykit9/strapi.git "
   },
   "bugs": {
-    "url": "https://github.com/strapi/strapi/issues"
+    "url": "https://github.com/ykit9/strapi/issues"
   },
   "engines": {
     "node": ">= 10.0.0",
