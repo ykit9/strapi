@@ -1,6 +1,6 @@
 {
   "name": "strapi-hook-mongoose-boostrap",
-  "version": "3.0.0-alpha.15",
+  "version": "3.0.0-alpha.15.1",
   "description": "Mongoose hook for the Strapi framework with ability to bootstrap your mongoose scheme with plugins",
   "homepage": "http://strapi.io",
   "keywords": [
