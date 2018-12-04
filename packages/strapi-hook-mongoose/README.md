@@ -33,4 +33,4 @@ Rename your model configs file located at
   } 
   ```
   
-I'll invoke before initializing moongoose model, therefore is useful to attaching mongoose plugins
+It'll invoke before initializing moongoose model, therefore is useful to attaching mongoose plugins
